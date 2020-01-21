@@ -1,0 +1,71 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jan 18 18:23:57 2020
+
+@author: Weronika
+"""
+
+
+
+#prostokąt
+import turtle
+
+turtle.forward(50)
+turtle.setheading(90)
+turtle.forward(100)
+turtle.setheading(180)
+turtle.forward(50)
+turtle.setheading(270)
+turtle.forward(100)
+               
+#esyfloresy
+import turtle
+turtle.forward(5)
+turtle.setheading(90)
+turtle.forward(10)
+turtle.setheading(180)
+turtle.forward(15)
+turtle.setheading(270)
+turtle.forward(20)
+turtle.setheading(360)
+turtle.forward(25)
+turtle.setheading(450)
+turtle.forward(30)
+turtle.setheading(540)
+turtle.forward(35)
+turtle.setheading(630)
+turtle.forward(40)
+turtle.setheading(720)
+turtle.forward(45)
+turtle.setheading(810)
+turtle.forward(50)
+turtle.setheading(720)
+turtle.forward(50)
+turtle.setheading(630)
+turtle.forward(50)
+turtle.setheading(540)
+turtle.forward(50)
+turtle.setheading(540)
+turtle.forward(50)
+turtle.setheading(450)
+turtle.forward(50)
+turtle.setheading(360)
+turtle.forward(50)
+
+#Ośmiokąt
+import turtle
+turtle.forward(100)
+turtle.setheading(45)
+turtle.forward(100)
+turtle.setheading(90)
+turtle.forward(100)
+turtle.setheading(135)
+turtle.forward(100)
+turtle.setheading(180)
+turtle.forward(100)
+turtle.setheading(225)  
+turtle.forward(100)
+turtle.setheading(270)
+turtle.forward(100)
+turtle.setheading(315)
+turtle.forward(100)       
