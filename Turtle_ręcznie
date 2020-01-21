@@ -12,8 +12,8 @@ import turtle
 def nkatny(t,fwr,n):       
     a=360/n
     for i in range(n):
-        t.fd(fwr) 
-        t.rt(a)
+        turtle.fd(fwr) 
+        turtle.rt(a)
         
     
 figure= turtle.Turtle()
