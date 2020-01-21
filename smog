@@ -1,3 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jan 21 22:04:49 2020
+
+@author: Weronika
+"""
+       #Sprawdzenie ilosci PM 2,5 w powietrzu
+  
+def smog(PM):
+    if PM>25:
+        print('Jeżeli możesz zostań w domu. Zbyt duże zanieczyszczenie w powietrzu')
+    else:
+        print('Czyste powietrze! Wyjdź na zewnątrz')
+        
+def function():
+    prompt='Wprowadź wartosc parametru PM'
+    PM=input(prompt)
+    PM=int(PM)
+    return PM
+     
+        
+PM=function()
+print(PM)
+smog(PM)
+
+
+
+
+
 #Sprawdzenie ilosci PM 2,5 w powietrzu
 
 MAX_PM=25
