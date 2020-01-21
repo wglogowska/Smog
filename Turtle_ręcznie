@@ -1,5 +1,28 @@
 # -*- coding: utf-8 -*-
 """
+Created on Tue Jan 21 21:51:07 2020
+
+@author: Weronika
+"""
+
+#N-KĄTNY
+
+import turtle
+
+def nkatny(t,fwr,n):       
+    a=360/n
+    for i in range(n):
+        t.fd(fwr) 
+        t.rt(a)
+        
+    
+figure= turtle.Turtle()
+nkatny(figure,20,16)
+
+
+
+# -*- coding: utf-8 -*-
+"""
 Created on Tue Jan 18 18:23:57 2020
 
 @author: Weronika
