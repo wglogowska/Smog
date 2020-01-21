@@ -1,0 +1,80 @@
+#GŁÓWNE
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jan 21 22:43:02 2020
+
+@author: Weronika
+"""
+#klasa główna
+class figures:
+    def __init__(self,width,height):#atrybuty
+        self.width=width
+        self.height=height
+        
+    def set_width(self,width): #metody mutatorów
+        self.width=width
+        
+    def set_height(self,height):
+        self.height=height
+        
+        
+    def get_width(self):#metody akcesorów
+        return self.width
+    
+    def get_height(self):
+        return self.height
+        
+    
+ #podklasa prostokąt   
+class rectangle(figures):
+
+    def __init__(self,width,height):
+        figures.__init__(self,width,height) #wywołanie metody super klasy
+
+    def area1(self):
+        return self.width*self.height
+
+
+ #Podklasa trójkąt
+class triangle(figures):
+    
+     def __init__(self,width,height):
+        figures.__init__(self,width,height)
+
+     def area2(self):
+        return 0.5*self.width*self.height
+ 
+ 
+ 
+# WYWOŁANIE - TWORZY OBIEKTY
+
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jan 21 23:12:49 2020
+
+@author: Weronika
+"""
+
+import figures
+
+def main():
+    
+    rectangle=figures.rectangle(5,7)
+    
+    triangle=figures.triangle(5,7)
+    
+    print('Dane')
+    print('            ')
+
+    print('Prostokąt o szerokosci:',rectangle.get_width())
+    print('Prostokąt o wysokosci:',rectangle.get_height())
+    print('Pole powierzchni:', rectangle.area1())
+    print()
+    
+    
+    print('Trójkąt o podstawie:',triangle.get_width())
+    print('Trójkąt o wysokosci:',triangle.get_height())
+    print('Pole powierzchni:', triangle.area2())
+    print()
+    
+main()
