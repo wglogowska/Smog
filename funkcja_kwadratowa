@@ -1,0 +1,45 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jan 18 14:51:07 2020
+
+@author: Weronika
+"""
+
+
+# Funkcja-kwadratowa
+import matplotlib.pyplot as plt
+print ('Rozwiązanie równiania kwadratowego ax2+bx+c=0')
+a=float(input('podaj wartość a: '))
+b=float(input('podaj wartość b: '))
+c=float(input('podaj wartość c: '))
+delta = b**2-4*a*c
+if delta > 0:
+    x1 = (-b-delta**(1/2))/(2*a)
+    x2 = (-b+delta**(1/2))/(2*a)
+    print ('wyniki:')
+    print ('x1 = ', x1, ', x2= ', x2)
+elif delta == 0:
+    x0 = -b/(2*a)
+    print ('x0 = ', x0)
+else:
+    print ('brak rozwiązań')
+    
+    
+x = -b/(2*a)
+y = a*x*x + b*x + c
+print("Ekstremum wynosi: " ,y ,"dla x równego: " ,x)
+
+r=[]
+l=[]
+for x in range (-50,50,1):
+        y=a*(x**2)+b*x+c
+        r.append(x)
+        l.append(y)
+        fig = plt.figure()
+axes = fig.add_subplot(111)
+axes.plot(r,l)
+axes.plot
+plt.title("Funkcja kwadratowa") 
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.show()   
